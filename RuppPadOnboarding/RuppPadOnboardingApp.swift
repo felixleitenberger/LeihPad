@@ -11,7 +11,8 @@ import SwiftUI
 struct RuppPadOnboardingApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            IntroView()
         }
+        .modelContainer(for: User.self)
     }
 }
